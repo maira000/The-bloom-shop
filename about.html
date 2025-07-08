@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bloom Shop – About Us</title>
+
+<!-- CSS STYLE SHEET  -->
+  <link rel="stylesheet" href="style.css" />
+
+<!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- AWESOME ICONS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- SECTION SUB-HEADER STARTS  -->
+<section class="sub-header">
+  <nav>
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="images/logo.png" alt="The Bloom Shop Logo" />
+    </a>
+
+    <!-- Mobile menu toggle -->
+    <i class="fa-solid fa-bars menu-open" id="menu-open" onclick="showMenu()"></i>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="nav-links">
+      <i class="fa-solid fa-xmark menu-close" id="menu-close" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1>About Us</h1>
+</section>
+<!-- SECTION SUB-HEADER ENDS -->
+
+<!-- About Section Starts -->
+<section class="about-us">
+  <div class="row">
+    <!-- Text Content -->
+    <div class="about-col">
+      <h1>Why Choose Us?</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, quo iusto. Sed facere repellendus ad dicta ut harum vitae molestias commodi. Cupiditate laboriosam, quas ullam tempore eum explicabo nemo laborum.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus placeat suscipit consequatur corrupti quod eligendi. Vero vel nemo autem sit quidem repudiandae laboriosam? Vero vitae corrupti eum odit ratione quasi!</p>
+      <a href="products.html" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+
+    <!-- Video Content -->
+    <div class="video-container">
+      <video src="images/vid.mp4" loop autoplay muted></video>
+      <h3>Best Sellers</h3>
+    </div>
+  </div>
+</section>
+<!-- About Section Ends -->
+
+<!-- Icons Services Section starts -->
+<section class="icons-container">
+  <div class="icons">
+    <img src="images/free-delivery.png" alt="Free Delivery Icon">
+    <div class="info">
+      <h3>Free Delivery</h3>
+      <span>On all Orders</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="images/credit.png" alt="Secure Payment Icon">
+    <div class="info">
+      <h3>Online Secure Payment</h3>
+      <span>Card Protected</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="images/product-return.png" alt="Return Policy Icon">
+    <div class="info">
+      <h3>Return Policy</h3>
+      <span>Money Back Guarantee</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="images/gift-box.png" alt="Gift Box Icon">
+    <div class="info">
+      <h3>Free Gift</h3>
+      <span>On orders above $20</span>
+    </div>
+  </div>
+</section>
+<!-- Icons Services Section ends -->
+
+<!-- Footer section starts  -->
+<section class="footer">
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</section>
+<!-- Footer section ends  -->
+
+<!--  Mobile Menu JavaScript -->
+<script>
+  const navlinks = document.getElementById("nav-links");
+  const menuClose = document.getElementById("menu-close");
+  const menuOpen = document.getElementById("menu-open");
+
+  function showMenu() {
+    navlinks.style.right = "0";
+    menuClose.style.display = "block";
+    menuOpen.style.display = "none";
+  }
+
+  function hideMenu() {
+    navlinks.style.right = "-250px";
+    menuClose.style.display = "none";
+    menuOpen.style.display = "block";
+  }
+
+  // On page load
+  window.addEventListener('DOMContentLoaded', () => {
+    menuClose.style.display = "none";
+  });
+</script>
+
+</body>
+</html>

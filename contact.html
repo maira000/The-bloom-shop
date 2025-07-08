@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bloom Shop – Contact Us</title>
+
+  <!-- CSS STYLE SHEET  -->
+  <link rel="stylesheet" href="style.css" />
+
+ <!-- GOOGLE FONTS   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- AWESOME ICONS LINK  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- SUB-HEADER SECTION STARTS -->
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="The Bloom Shop Logo" /></a>
+    <i class="fa-solid fa-bars menu-open" id="menu-open" onclick="showMenu()"></i>
+
+    <div class="nav-links" id="nav-links">
+      <i class="fa-solid fa-xmark menu-close" id="menu-close" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Contact Us</h1>
+</section>
+<!-- SUB-HEADER SECTION ENDS -->
+
+
+<!-- LOCATION SECTION STARTS  -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1698900.2174696107!2d73.0774375!3d33.7305625!3m2!1i1024!2i768!4f13.1!2m1!1sbloom%20shop!5e0!3m2!1sen!2s!4v1751791032320!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+<!-- LOCATION SECTION ENDS  -->
+
+<!-- FORM SECTION STARTS  -->
+<section class="contact-section">
+  <div class="row">
+    
+    <!-- Contact Details -->
+    <div class="contact-col details">
+      <div class="info-box">
+        <i class="fa fa-home"></i>
+        <div>
+          <h5>XYZ Road, ABC Building</h5>
+          <p>Bangalore, Karnataka, IN</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fa fa-phone"></i>
+        <div>
+          <h5>+1 0123456789</h5>
+          <p>Monday to Saturday, 10AM to 6PM</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fa fa-envelope"></i>
+        <div>
+          <h5>info@easytutorialspro.com</h5>
+          <p>Email us your query</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-col form">
+      <form action="formhandler.php" method="post">
+        
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea rows="5" name="Message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+<!-- FORM SECTION ENDS  -->
+
+<!-- FOOTER SECTION STARTS  -->
+<section class="footer">
+  <h4>ABOUT US</h4>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, asperiores nulla consectetur <br> voluptas dicta porro incidunt facilis voluptatem tempore, itaque non libero molestiae tenetur sit delectus corrupti velit doloremque atque?
+  </p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</section>
+<!-- FOOTER SECTION ENDS  --> 
+
+<!--  JavaScript for Mobile Navigation -->
+<script>
+  const navlinks = document.getElementById("nav-links");
+  const menuClose = document.getElementById("menu-close");
+  const menuOpen = document.getElementById("menu-open");
+
+  function showMenu() {
+    navlinks.style.right = "0";
+    menuClose.style.display = "block";
+    menuOpen.style.display = "none";
+  }
+
+  function hideMenu() {
+    navlinks.style.right = "-250px";
+    menuClose.style.display = "none";
+    menuOpen.style.display = "block";
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    menuClose.style.display = "none";
+  });
+</script>
+
+</body>
+</html>

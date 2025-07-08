@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bloom Shop – E-Commerce Website</title>
+<!-- STYLE SHEET FOR CSS -->
+  <link rel="stylesheet" href="style.css" />
+<!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- AWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER SECTION STARTS -->
+<section class="header">
+  <!-- NAVIGATION BAR -->
+  <nav>
+  <!-- LOGO -->
+    <a href="index.html">
+      <img src="images/logo.png" alt="The Bloom Shop Logo" />
+    </a>
+<!-- MENU TO BE VISIBLE IN MOBILE -->
+    <i class="fa-solid fa-bars menu-open" id="menu-open" onclick="showMenu()"></i>
+<!-- NAVIGATION LINKS  -->
+    <div class="nav-links" id="nav-links">
+      <i class="fa-solid fa-xmark menu-close" id="menu-close" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- Top Right Icons -->
+    <div class="icons">
+      <a href="#"><i class="fa-solid fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </nav>
+
+<!-- TEXT  -->
+  <div class="text-box">
+    <h1>🌸 The Bloom Shop</h1>
+    <h2>“Aesthetic wellness, curated for you.”</h2>
+    <p>At The Bloom Shop, we blend self-care with style — offering handpicked, pastel-perfect products designed to uplift, inspire, and glow with you.</p>
+  </div>
+</section>
+<!-- HEADER SECTION ENDS -->
+
+<!-- PRODUCTS CATEGORIES SECTION STARTS -->
+<section class="products">
+  <h1>Products for you</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus, consectetur itaque ex ab debitis neque unde suscipit accusantium nobis incidunt aliquid aspernatur, rerum magnam ducimus numquam quam iure ullam.</p>
+  <div class="row">
+    <div class="products-col"><h3>Self-Care & Wellness</h3></div>
+    <div class="products-col"><h3>Fashion Accessories</h3></div>
+    <div class="products-col"><h3>Makeup Products</h3></div>
+    <div class="products-col"><h3>Decoration Items</h3></div>
+  </div>
+</section>
+<!-- PRODUCTS CATEGORIES SECTION ENDS -->
+
+<!-- BRANDING SECTION STARTS  -->
+
+<section class ="branding">
+  <h1> Our Branding across the World </h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, architecto vitae laudantium repellat dolor aliquam ullam nisi dicta est quasi libero labore esse, soluta repudiandae error minus, modi aliquid reiciendis!</p>
+
+  <div class="row">
+    <div class="branding-col">
+      <img src="images/london.png">
+      <div class = "layer">
+        <h3> LONDON</h3>
+      </div>
+    </div>
+    <div class="branding-col">
+      <img src="images/washington.png">
+      <div class = "layer">
+        <h3> WASHINGTON</h3>
+      </div>
+    </div>
+    <div class="branding-col">
+      <img src="images/newyork.png">
+      <div class = "layer">
+        <h3> NEW YORK</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- BRANDING SECTION ENDS  -->
+
+<!-- COLLAB SECTION STARTS  -->
+<section class="collab">
+    <h1>Collaborate with Top Makeup Artists</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis cupiditate hic error illum adipisci minus sit libero deleniti officiis! </p>
+
+    <div class="row">
+      <!-- Huda Beauty -->
+      <div class="collab-col">
+        <img src="images/huda.jpeg" alt="Huda Beauty">
+        <div>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, veritatis non quod qui accusantium architecto aperiam odit quis voluptates ipsum delectus. </p>
+          <div class="collab-footer">
+            <h3>Huda Beauty</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NikkieTutorials -->
+      <div class="collab-col">
+        <img src="images/nikkie.jpeg" alt="NikkieTutorials">
+        <div>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, veritatis non quod qui accusantium architecto aperiam odit quis voluptates ipsum delectus. </p>
+          <div class="collab-footer">
+            <h3>NikkieTutorials</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- COLLAB SECTION ENDS  -->
+
+<!-- FOOTER SECTION STARTS -->
+<section class="footer">
+  <h4>ABOUT US</h4>
+  <p>The Bloom Shop brings together elegant aesthetics and well-being — where beauty meets self-love and mindful gifting.</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</section>
+<!-- FOOTER SECTION STARTS -->
+
+<!--  JavaScript for Menu Toggle -->
+<script>
+  const navlinks = document.getElementById("nav-links");
+  const menuClose = document.getElementById("menu-close");
+  const menuOpen = document.getElementById("menu-open");
+
+  function showMenu() {
+    navlinks.style.right = "0";
+    menuClose.style.display = "block";
+    menuOpen.style.display = "none";
+  }
+
+  function hideMenu() {
+    navlinks.style.right = "-250px";
+    menuClose.style.display = "none";
+    menuOpen.style.display = "block";
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    menuClose.style.display = "none";
+  });
+</script>
+
+</body>
+</html>

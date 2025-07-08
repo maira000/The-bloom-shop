@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bloom Shop – Reviews</title>
+<!-- css style sheet  -->
+  <link rel="stylesheet" href="style.css" />
+<!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- awesome icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- sub-header section starts  -->
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="The Bloom Shop Logo" /></a>
+    <i class="fa-solid fa-bars menu-open" id="menu-open" onclick="showMenu()"></i>
+
+    <div class="nav-links" id="nav-links">
+      <i class="fa-solid fa-xmark menu-close" id="menu-close" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1>REVIEWS</h1>
+</section>
+<!-- sub-header section ends  -->
+
+<!-- Reviews Section starts -->
+<section class="review" id="review">
+  <h1 class="heading">Customer's <span>Reviews</span></h1>
+  <div class="box-container">
+
+    <!-- Review Box 1 -->
+    <div class="box">
+      <div class="stars-r">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptas magnam accusamus veniam saepe rerum eaque earum repellat quia porro, unde odit sequi at pariatur? Asperiores aut reprehenderit autem quis.</p>
+      <div class="user-info">
+        <h3>John Russel</h3>
+        <span>Happy customer</span>
+      </div>
+      <span class="fas fa-quote-right"></span>
+    </div>
+
+    <!-- Review Box 2 -->
+    <div class="box">
+      <div class="stars-r">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptas magnam accusamus veniam saepe rerum eaque earum repellat quia porro, unde odit sequi at pariatur? Asperiores aut reprehenderit autem quis.</p>
+      <div class="user-info">
+        <h3>Leon Cutty</h3>
+        <span>Happy customer</span>
+      </div>
+      <span class="fas fa-quote-right"></span>
+    </div>
+
+  </div>
+</section>
+<!-- Reviews Section ends -->
+
+<!--  Footer section -->
+<section class="footer">
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</section>
+
+<!--  JavaScript for Mobile Navigation -->
+<script>
+  const navlinks = document.getElementById("nav-links");
+  const menuClose = document.getElementById("menu-close");
+  const menuOpen = document.getElementById("menu-open");
+
+  function showMenu() {
+    navlinks.style.right = "0";
+    menuClose.style.display = "block";
+    menuOpen.style.display = "none";
+  }
+
+  function hideMenu() {
+    navlinks.style.right = "-250px";
+    menuClose.style.display = "none";
+    menuOpen.style.display = "block";
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    menuClose.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
