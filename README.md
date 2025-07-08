@@ -42,5 +42,5 @@ Welcome to **The Bloom Shop**, a pastel-themed e-commerce website that combines 
 
 ![Bloom Shop Preview](images/banner.png) <!-- Add a real screenshot if available -->
 
-**Designed with ❤️**
+**Designed with ❤️by Maira Naveed**
 
