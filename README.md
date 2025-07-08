@@ -41,7 +41,8 @@ Welcome to **The Bloom Shop**, a pastel-themed e-commerce website that combines 
 
 ## 📸 Preview
 
-![Bloom Shop Preview](images/banner.png) <!-- Replace this with a screenshot if desired -->
+![image](https://github.com/user-attachments/assets/8e945d38-9c56-497b-b875-395aab9e1fb6)
+
 
 ## 📬 Contact
 
