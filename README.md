@@ -42,11 +42,5 @@ Welcome to **The Bloom Shop**, a pastel-themed e-commerce website that combines 
 
 ![Bloom Shop Preview](images/banner.png) <!-- Add a real screenshot if available -->
 
-## 📬 Contact
-
-Feel free to reach out via `info@easytutorialspro.com` or use the contact form on the site.
-
----
-
 **Designed with ❤️**
 
